@@ -1,0 +1,18 @@
+:root{
+    --Terra-Cotta:#ED6A5A;
+    --Pale-Spring-Bud:#F4F1BB;
+    --Opal:#9BC1BC;
+    --Cadet-Blue:#5CA4A9;
+    --Alabaster:#E6EBE0;
+    --Cyclamen:#E86A92;
+    --Smokey-Black:#0F0F0F;
+    --Jet:#2D2E2E;
+    --Dim-Gray:#716969;
+
+}
+
+.grid-container{
+    display: grid;
+    background-color: var(--Dim-Gray);
+    grid-template-columns: ;
+}
