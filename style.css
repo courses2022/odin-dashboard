@@ -13,6 +13,90 @@
 
 .grid-container{
     display: grid;
-    background-color: var(--Dim-Gray);
-    grid-template-columns: ;
+    background-color: var(--Alabaster);
+    color: var(--Smokey-Black);
+    grid-template-columns: minmax(150px, 20%) 80%;
+    height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.menu{
+    background-color: var(--Opal);
+    display: grid;
+    grid-template-rows: 1fr 3fr 4fr;
+    padding: 30px;
+    color: white;
+}
+
+
+
+.menu1 a, .menu2 a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: var(--Jet);
+    display: block;
+    transition: 0.3s;
+    border-radius: 5px;
+    width: 100%;
+  }
+  
+  .menu1 a:hover, .menu2 a:hover {
+    background-color: var(--Pale-Spring-Bud);
+    
+  }
+
+  .menu1 > a > i,.menu2 > a > i{
+      padding-right: 10px;
+      color: var(--Alabaster);
+  }
+
+  .selected{
+      background-color: var(--Cadet-Blue);
+      border-radius: 15px 15px 0px 0px;
+      width: 100%;
+  }
+
+.logo{
+    font-size: 25px;
+    color: var(--Pale-Spring-Bud);
+    text-align: center;
+    
+}
+
+.logo > h2 > i{
+    font-size: 60px;
+    padding-right: 10px;
+    color: white;
+}
+
+.menu2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100%;
+}
+
+.menu2>p:last-child{
+    text-align: center;
+    color: var(--Pale-Spring-Bud);
+}
+
+.main{
+    display: grid;
+    grid-template-rows: 150px 1fr;
+}
+
+.header{
+    background-color: white;
+}
+
+.dash{
+    display: grid;
+    grid-template: 50% 50% / 75% 25%;
+    padding: 20px;
+}
+
+.projects{
+    grid-area: 1/1/span 2/ span 1;
 }
