@@ -92,6 +92,25 @@
 
 .header{
     background-color: white;
+    display: grid;
+    grid-template: 50px 1fr/ 1fr 100px 100px 100px;
+    padding: 15px;
+    padding-top: 30px;
+}
+
+.search{
+    display: flex;
+    ga
+}
+
+#searchBox{
+    width: 80%;
+    border-radius: 10px;
+    
+    background-color: #ECEBF3;
+    padding: 5px;
+    outline: none;
+    border: none;
 }
 
 .dash{
