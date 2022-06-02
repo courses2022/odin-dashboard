@@ -8,20 +8,21 @@
     --Smokey-Black:#0F0F0F;
     --Jet:#2D2E2E;
     --Dim-Gray:#716969;
+    --Ghost-White:#ECEBF3;
 
 }
 
 .grid-container{
     display: grid;
-    background-color: var(--Alabaster);
+    background-color: var(--Ghost-White);
     color: var(--Smokey-Black);
-    grid-template-columns: minmax(220px, 20%) 80%;
+    grid-template-columns: minmax(240px, 20%) 80%;
     height: 100vh;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .menu{
-    background-color: var(--Opal);
+    background-color: var(--Cadet-Blue);
     display: grid;
     grid-template-rows: 1fr 2fr 4fr 40px;
     padding: 30px;
@@ -41,10 +42,12 @@
     transition: 0.3s;
     width: 100%;
     border-radius: 5px;
+    font-weight: 550;
   }
   
   .menu1 a:hover, .menu2 a:hover {
     background-color: var(--Pale-Spring-Bud);
+    box-shadow: 0 3px 6px rgba(0,0,0,0.08), 0 3px 6px rgba(0,0,0,0.13);
     
   }
 
@@ -54,17 +57,24 @@
   }
 
   .selected{
-      background-color: var(--Cadet-Blue);
+      background-color: var(--Opal);
       border-radius: 5px;
       width: 100%;
+      
   }
 
 .logo{
     font-size: 25px;
-    color: var(--Pale-Spring-Bud);
+    color: var(--Opal);
     text-align: center;
     
 }
+
+.logo>h2:hover{
+    text-shadow: 0 3px 6px rgba(0,0,0,0.08), 0 3px 6px rgba(0,0,0,0.13);
+    color: var(--Pale-Spring-Bud);
+}
+
 
 .logo > h2 > i{
     font-size: 60px;
@@ -93,24 +103,48 @@
 .header{
     background-color: white;
     display: grid;
-    grid-template: 50px 1fr/ 1fr 100px 100px 100px;
+    grid-template: 50px 1fr/ 1fr 150px 150px 150px;
     padding: 15px;
     padding-top: 30px;
+    align-items: center;
+    justify-content: center;
+    gap:5px
+}
+
+.header>p:nth-child(2), .header>p:nth-child(3){
+    
+    color: var(--Jet);
+    font-size: 30px;
+    text-align: center;
+}
+
+.header>p:nth-child(4){
+    color: var(--Jet);
+    font-size: 17px;
+    font-weight: bold;
+    text-align: center;
+}
+.warningText{
+    color: var(--Terra-Cotta);
 }
 
 .search{
     display: flex;
-    ga
+    gap: 10px;
+    font-size: 20px;
+    color: var(--Dim-Gray);
+    align-items: center;
 }
 
 #searchBox{
     width: 80%;
     border-radius: 10px;
-    
+    height: 30px;
     background-color: #ECEBF3;
     padding: 5px;
     outline: none;
     border: none;
+    
 }
 
 .dash{
@@ -122,3 +156,71 @@
 .projects{
     grid-area: 1/1/span 2/ span 1;
 }
+
+.button {
+    border: none;
+    color: white;
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 20px 50px;
+    border-radius: 5px;
+    margin:5px;
+    border-bottom-style: solid;
+    border-bottom-width: 3px;
+    transition: text-shadow 0.3s ease;
+    
+  }
+  
+  .button:active {
+    position: relative;
+    top: 1px;
+    border-bottom-width: 2px;
+  }
+  
+  .button:hover {
+    text-shadow: 2px 2px 0px rgba(0,0,0,.3)
+  }
+  
+  .default {
+    background-color: var(--Cadet-Blue);
+    border-color:#447d81;
+  }
+
+
+.test{}
+
+.menu-btn{
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 20px 15px;
+    background-color: var(--Cadet-Blue);
+    transition: transform 500ms ease-in-out-back, background-position 800ms ease-in-out-back, box-shadow 500ms linear;
+     background-size: contain;
+    background-position: -200px center;
+    background-repeat: no-repeat;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    text-align: center;
+    border-radius: 3px;
+    
+   
+}
+   .menu-btn:hover{
+    
+    background-position: -60px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+   }
+
+   .menu-btn:active{
+    transform: scale(1);
+    background-position: 500px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+
+   }
+    
+  
+
+
