@@ -149,9 +149,9 @@
 
 .dash{
     display: grid;
-    grid-template: 50% 50% / 75% 25%;
+    grid-template: 400px 300px / 75% 25%;
     padding: 20px;
-    gap: 20px;
+    gap: 2rem;
     margin-right: 20px;
     overflow: hidden;
 }
@@ -227,14 +227,17 @@
     padding: 10px;
     border-radius: 5px;
     padding-bottom: 10px;
+    
+}  
+
+.overflow{
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
-}  
+}
 
 .announcements{
     display: grid;
-    overflow-y: auto;
-    -webkit-overflow-scrolling: touch;
+    
 }
 
 .announcement{
@@ -247,9 +250,18 @@
     box-shadow: 0 3px 2px rgba(0,0,0,0.08), 0 3px 6px rgba(0,0,0,0.13);
 }
 
+.contacts{
+    display: grid;
+
+}
+
 .contact{
     display: grid;
     grid-template-columns: 25% 75%;
+}
+
+.contact:hover{
+    text-shadow: 0 3px 6px rgba(0,0,0,0.08), 0 3px 6px rgba(0,0,0,0.13);
 }
 
 .contact p{
