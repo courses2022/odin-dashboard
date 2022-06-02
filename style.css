@@ -106,7 +106,7 @@ body{
 .header{
     background-color: white;
     display: grid;
-    grid-template: 50px 1fr/ 1fr 150px 150px 150px;
+    grid-template: 50px 1fr/ 1fr 10% 10% 10%;
     padding: 15px;
     padding-top: 30px;
     align-items: center;
@@ -197,7 +197,7 @@ body{
   }
   
   .button:hover {
-    text-shadow: 2px 2px 0px rgba(0,0,0,.3)
+    text-shadow: 2px 2px 0px rgba(0,0,0,.3);
   }
   
   .default {
