@@ -274,3 +274,11 @@
     text-align: center;
 }
 
+.userCard{
+    display: flex;
+    text-align: left;
+    justify-content: flex-start;
+    gap: 10px;
+    font-size: large;
+    color: var(--Dim-Gray);
+}
