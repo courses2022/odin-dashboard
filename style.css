@@ -12,12 +12,15 @@
 
 }
 
+body{
+    color: var(--Ghost-White);
+}
 .grid-container{
     display: grid;
     background-color: var(--Ghost-White);
     color: var(--Smokey-Black);
     grid-template-columns: minmax(240px, 20%) 80%;
-    height: 100vh;
+    height: 100%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -158,6 +161,18 @@
 
 .projects{
     grid-area: 1/1/span 2/ span 1;
+    
+}
+
+.projectsSection{
+    display: grid;
+    grid-template: 250px 250px 250px / 50% 50%;
+    gap: 2rem;
+    margin-right: 2rem;
+    grid-template-rows: repeat(3, minmax(150px, 250px));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    overflow: hidden;
+
 }
 
 .button {
@@ -281,4 +296,21 @@
     gap: 10px;
     font-size: large;
     color: var(--Dim-Gray);
+}
+
+
+.project{
+    overflow: hidden;
+}
+
+.yellowCard{
+    border-left: 10px solid var(--Pale-Spring-Bud);
+}
+
+.redCard{
+    border-left: 10px solid var(--Cyclamen);
+}
+
+.greenCard{
+    border-left: 10px solid var(--Opal);
 }
