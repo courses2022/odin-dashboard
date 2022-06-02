@@ -270,9 +270,26 @@ body{
 
 }
 
+.mainAvatar {
+    vertical-align: middle;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+   
+  }
+
+.avatar {
+    vertical-align: middle;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin: auto;
+  }
+
 .contact{
     display: grid;
     grid-template-columns: 25% 75%;
+    padding-left: 15px;
 }
 
 .contact:hover{
@@ -284,10 +301,7 @@ body{
     margin : 0;
 }
 
-.contact > p:first-child{
-    font-size: 2.5rem;
-    text-align: center;
-}
+
 
 .userCard{
     display: flex;
@@ -301,6 +315,10 @@ body{
 
 .project{
     overflow: hidden;
+}
+
+.project:hover{
+    box-shadow: 0 3px 2px rgba(0,0,0,0.08), 0 3px 6px rgba(0,0,0,0.13);
 }
 
 .yellowCard{
