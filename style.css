@@ -315,6 +315,31 @@ body{
 
 .project{
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.cardText{
+    max-height: 60%;
+    overflow: hidden;
+}
+
+.project > div:last-child{
+    display: flex;
+    justify-content: flex-end;
+    gap: 5px;
+}
+
+.project > div:last-child i{
+    padding-right: 10px;
+    font-size: 20px;
+    color: var(--Dim-Gray);
+}
+
+.project > div:last-child i:hover{
+    padding-right: 10px;
+    font-size: 20px;
+    color: var(--Cadet-Blue);
 }
 
 .project:hover{
